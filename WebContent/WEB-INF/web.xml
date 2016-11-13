@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>tests</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>http</display-name>
+    <servlet-name>http</servlet-name>
+    <servlet-class>test1.http</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>http</servlet-name>
+    <url-pattern>/http</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HeaderServlet</display-name>
+    <servlet-name>HeaderServlet</servlet-name>
+    <servlet-class>test1.HeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HeaderServlet</servlet-name>
+    <url-pattern>/HeaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BodyServlet</display-name>
+    <servlet-name>BodyServlet</servlet-name>
+    <servlet-class>test1.BodyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BodyServlet</servlet-name>
+    <url-pattern>/BodyServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
